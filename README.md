@@ -1,1 +1,201 @@
 # my-portfolio
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archana Portfolio</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Dark mode */
+        .dark-mode {
+            background-color: #121212;
+            color: #fff;
+        }
+
+        /* Navbar styles */
+        nav {
+            background-color: #007BFF;
+            padding: 10px 0;
+            border-bottom: 4px solid #0056b3;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            border: 2px solid transparent;
+            transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #fff;
+            border-color: #ffcc00;
+            background-color: #ff6600;
+            border-radius: 5px;
+        }
+
+        /* Section styles */
+        section {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border: 3px solid #007BFF;
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Project section */
+        .project {
+            display: inline-block;
+            width: 300px;
+            padding: 15px;
+            border: 3px solid #007BFF;
+            margin: 15px;
+            border-radius: 8px;
+            background: #e6f7ff;
+            transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            border-color: #ff6600;
+        }
+
+        /* Button styling */
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: 3px solid #0056b3;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff6600;
+            border-color: #ffcc00;
+        }
+
+        /* Image styling */
+        img {
+            border: 4px solid #007BFF;
+            border-radius: 8px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            border-color: #ff6600;
+        }
+
+        /* Contact form */
+        form {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border: 3px solid #007BFF;
+            border-radius: 10px;
+            background-color: #e6f7ff;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 3px solid #007BFF;
+            border-radius: 5px;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #ff6600;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: #007BFF; border-bottom: 4px solid #0056b3; display: inline-block; padding-bottom: 5px;">BOLLINENI ARCHANA CHOWDARY</h1>
+        <p><i>A passionate and motivated B.Tech student with a strong foundation in data analysis. Seeking opportunities to apply my technical skills in Excel, Python, and Power BI to drive impactful results.</i></p>
+        <nav>
+            <ul>
+                <li><a href="#about"><b>ABOUT ME</b></a></li>
+                <li><a href="#projects"><b>PROJECT</b></a></li>
+                <li><a href="#contact"><b>CONTACT</b></a></li>
+            </ul>
+        </nav>
+        <button id="dark-mode-toggle">🌙</button>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>ABOUT ME</h2>
+            <img src="profile.jpg" alt="Profile Picture" width="200" height="250">
+            <p><em>A passionate and motivated B.Tech student with a strong foundation in data analysis, programming, and AI applications. Seeking opportunities to apply my technical skills in Excel, Python, and Power BI to drive impactful results. Eager to contribute to projects that blend technology with real-world problem-solving, especially in the fields of data science and machine learning.</em></p>
+        </section>
+        
+        <section id="projects">
+            <h2>PROJECT</h2>
+            <div class="project">
+                <h3><b>Recti Cure - Detecting Cataract Disorder</b></h3>
+                <p><i>Technologies: Python, CNN, VGG-16</i></p>
+                <em>Developed a web application that detects cataracts from fundus images using Convolutional Neural Networks (CNN). Improved detection accuracy through model optimization, providing users with reliable results for medical treatment suggestions.
+                </em>
+                <img src="image 2.png" alt="Project 1" width="100%">
+                <img src="image 1.png" alt="Project 1" width="100%">
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>CONTACT</h2>
+            <p>Email: archana.bollieni@gmail.com </p>
+            <p>GitHub: <a href="https://github.com/Archanabollineni223" target="_blank"><b>visit my GitHub</b><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="20"></a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/archana-bollineni-515575259/" target="_blank"><b>Connect on LinkedIn</b><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="20"></a></p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const toggleButton = document.getElementById('dark-mode-toggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+</script>
+</body>
+</html>
